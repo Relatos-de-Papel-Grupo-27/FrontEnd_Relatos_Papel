@@ -1,6 +1,5 @@
 import { Container } from 'react-bootstrap';
 import UserListView from '../views/UserListView'; 
-import Footer from '../components/Footer';
 
 const HomePage = () => {
   return (
