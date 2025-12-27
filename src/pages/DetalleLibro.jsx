@@ -1,5 +1,4 @@
 import { Container } from 'react-bootstrap';
-import Footer from '../components/Footer';
 const HomePage = () => {
   return (
     <>
