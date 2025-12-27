@@ -1,19 +1,26 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 import Footer from '../components/Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCcVisa, faCcMastercard, faCcAmex } from '@fortawesome/free-brands-svg-icons';
+import '../App.css';
 
 const MainLayout = () => {
   return (
     <>
-      <Navbar  expand="lg">
+      <Navbar expand="lg" className="custom-navbar">
         <Container>
-          <Navbar.Brand href="/">Front end creado en React para Proyecto transversal Relatos de papel - MISSI Unir 2025-2026</Navbar.Brand>
+        <FontAwesomeIcon icon={faCcVisa} size="2x" beat/>
+          <Navbar.Brand href="/">Libreria Digital</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/">Caterogia 1</Nav.Link>
-            <Nav.Link href="/porDefinir">Caterogia 2</Nav.Link>
-            <Nav.Link href="/porDefinir">Caterogia 3</Nav.Link>
-            <Nav.Link href="/porDefinir">Caterogia 4</Nav.Link>
+            <Nav.Link href="/">Caterogia 1 |</Nav.Link>
+            <Nav.Link href="/porDefinir">Caterogia 2 |</Nav.Link>
+            <Nav.Link href="/porDefinir">Caterogia 3 |</Nav.Link>
+            <Nav.Link href="/porDefinir">Caterogia 4 |</Nav.Link>
           </Nav>
+          <FontAwesomeIcon icon={faCcVisa} size="2x" />
+          <FontAwesomeIcon icon={faCcMastercard} size="2x" />
+          <FontAwesomeIcon icon={faCcAmex} size="2x" />
         </Container>
       </Navbar>
 
