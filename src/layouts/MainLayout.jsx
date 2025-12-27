@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 const MainLayout = () => {
   return (
@@ -21,9 +22,8 @@ const MainLayout = () => {
         <Outlet /> 
       </main>
 
-      <footer className="text-center py-3 bg-light mt-auto">
-        <p>&copy; 2025 - Relatos de papel - MISSI Unir 2025-2026</p>
-      </footer>
+    
+      <Footer />
     </>
   );
 };
