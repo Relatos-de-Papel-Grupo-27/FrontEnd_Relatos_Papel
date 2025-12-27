@@ -12,6 +12,7 @@ const IconCarrito = () => {
                     <Cart className="me-2" /><Badge bg="danger">2</Badge>  
                 </Button>
         </Link>
+        
     );
 };
 
